@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Typedstream::VERSION
   spec.authors       = ["Yasuaki Uechi"]
   spec.email         = ["uetchy@randompaper.co"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Parse Apple's typedstream data serialisation format in Ruby}
+  spec.description   = %q{Parse Apple's typedstream data serialisation format in Ruby}
   spec.homepage      = ""
   spec.license       = "MIT"
 
