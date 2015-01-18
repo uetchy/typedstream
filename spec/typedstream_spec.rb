@@ -1,4 +1,6 @@
 require 'spec_helper'
+require 'pry-byebug'
+require 'pp'
 
 describe Typedstream do
   it 'has a version number' do
@@ -7,7 +9,7 @@ describe Typedstream do
 
   it 'can parse NSString' do
     str = open('spec/fixtures/NSString', 'rb').read
-    str_nil = open('spec/fixtures/NSString', 'rb').read
+    str_nil = open('spec/fixtures/NSStringNil', 'rb').read
     expect(Typedstream::Parser.parse(str)).to eq('abcdefgABCDEFG!?@[]/+*^&-_')
     expect(Typedstream::Parser.parse(str_nil)).to eq('')
   end

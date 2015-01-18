@@ -5,9 +5,13 @@ NSArchiver.archiveRootObject("", toFile: "NSStringNil")
 
 NSArchiver.archiveRootObject(1, toFile: "NSNumberWith1digit")
 NSArchiver.archiveRootObject(22, toFile: "NSNumberWith2digits")
+NSArchiver.archiveRootObject(-22, toFile: "NSNumberWithMinus2digits")
 NSArchiver.archiveRootObject(333, toFile: "NSNumberWith3digits")
 NSArchiver.archiveRootObject(4444, toFile: "NSNumberWith4digits")
 NSArchiver.archiveRootObject(55555, toFile: "NSNumberWith5digits")
+NSArchiver.archiveRootObject(-55555, toFile: "NSNumberWithMinus5digits")
+NSArchiver.archiveRootObject(NSNumber(unsignedLongLong: 18446744073709551613), toFile: "NSNumberWithULongLong")
+NSArchiver.archiveRootObject(0.1358, toFile: "NSNumberWithFloat")
 
 NSArchiver.archiveRootObject([0, 1, 2, 3, 4, 5], toFile: "NSArrayWithNSNumber")
 NSArchiver.archiveRootObject(["abc", "def", "012"], toFile: "NSArrayWithNSString")
